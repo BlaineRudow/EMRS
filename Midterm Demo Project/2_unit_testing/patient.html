@@ -1,0 +1,89 @@
+<!doctype html>
+<!--
+TITLE: patient.html
+AUTHOR: Blaine Rudow (BR)
+DATE: 2/19/22
+-->
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="CSS/patient.css">  
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+<script src="Javascript/home.js"></script>
+<title>Patient Page</title>
+</head>
+
+<body>
+	<header>
+		<h1>EMRS Patient Page</h1>
+		<p>By Blaine Rudow</p>
+		<a href="index.html" id="logout">Logout</a>
+    </header>
+	<div id="topNavBar">
+		<a href="home.html">Home</a>
+		<a class="active" href="patient.html">Patients</a>
+		<a href="provider.html">Provider</a>
+		<a href="calendar.html">Calendar</a>
+		<a href="settings.html">Settings</a>
+	</div>
+	<div id="sideNavBar">
+		<ul>
+			<li><a  href="home.html">Home</a></li>
+			<li><a class="active" href="patient.html">Patients</a></li>
+			<li><a href="provider.html">Provider</a></li>
+			<li><a href="calendar.html">Calendar</a></li>
+			<li><a href="settings.html">Settings</a></li>
+		</ul>
+	</div>
+	<div id="main">
+		<form>
+			<label>SSN<input type="text"></input></label><input type="submit"></input>
+			<label>Name<input type="text"></input></label><input type="submit"></input>
+			<label>DOB<input type="text"></input></label><input type="submit"></input>
+		</form>
+		
+		<table>
+			<tr>
+				<th>SSN</th>
+				<th>Name</th>
+				<th>DOB</th>
+			</tr>
+			<tr>
+				<td>881-546-8815</td>
+				<td>Hailey Lightfoot</td>
+				<td>02-07-1982</td>
+				
+			</tr>
+			<tr>
+				<td>773-110-8891</td>
+				<td>Mario Gonzalez</td>
+				<td>11-28-1989</td>
+			</tr>
+			<tr>
+				<td>645-881-1154</td>
+				<td>Franco Inaros</td>
+				<td>07-19-1974</td>
+			</tr>
+			<tr>
+				<td>745-889-5620</td>
+				<td>Kaitlyn Vaught</td>
+				<td>05-02-1991</td>
+			</tr>
+			<tr>
+				<td>448-118-9899</td>
+				<td>Kevin Smith</td>
+				<td>08-11-1981</td>
+			</tr>
+			<tr>
+				<td>212-448-6891</td>
+				<td>James OBrien</td>
+				<td>11-04-1995</td>
+			</tr>
+		</table>
+		
+		<button>New Patient</input>
+		<button>Select Patient</input>
+	</div>
+</body>
+</html>

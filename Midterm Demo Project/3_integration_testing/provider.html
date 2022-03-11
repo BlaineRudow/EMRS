@@ -1,0 +1,92 @@
+<!doctype html>
+<!--
+TITLE: provider.html
+AUTHOR: Blaine Rudow (BR)
+DATE: 2/19/22
+-->
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="CSS/provider.css">  
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+<script src="Javascript/provider.js"></script>
+<title>EMRS Provider Page</title>
+</head>
+
+<body>
+	<header>
+		<h1>EMRS Provider Page</h1>
+		<p>By Blaine Rudow</p>
+		<a href="index.html" id="logout">Logout</a>
+    </header>
+	<div id="topNavBar">
+		<a href="home.html">Home</a>
+		<a href="patient.html">Patients</a>
+		<a class="active" href="#provider">Provider</a>
+		<a href="calendar.html">Calendar</a>
+		<a href="settings.html">Settings</a>
+	</div>
+	<div id="sideNavBar">
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="patient.html">Patients</a></li>
+			<li><a class="active" href="#provider">Provider</a></li>
+			<li><a href="calendar.html">Calendar</a></li>
+			<li><a href="settings.html">Settings</a></li>
+		</ul>
+	</div>
+	<div id="main">
+		<h1>Provider Name</h1>
+		<h2>Appointments:</h2>
+		<label>Date:<input type="text"></input></label><input type="submit"></input>
+		<table>
+			<tr>
+				<th>Date</th>
+				<th>Time</th>
+				<th>Patient</th>
+				<th>Notes</th>
+			</tr>
+			<tr>
+				<td>3/11/22</td>
+				<td>8:00</td>
+				<td>Linda Miller</td>
+				<td>Linda made an appointment due to a pain on her left side.</td>
+			</tr>
+			<tr>
+				<td>3/11/22</td>
+				<td>8:30</td>
+				<td>Frank Jones</td>
+				<td>Frank needs an annual physical exam.</td>
+			</tr>
+			<tr>
+				<td>3/11/22</td>
+				<td>9:00</td>
+				<td>Jeff Elhart</td>
+				<td>Appointment to review antibiotics treatment.</td>
+			</tr>
+			<tr>
+				<td>3/11/22</td>
+				<td>9:30</td>
+				<td>Kristin Palomino</td>
+				<td>Patient has slight cough and congestion.</td>
+			</tr>
+			<tr>
+				<td>3/11/22</td>
+				<td>10:00</td>
+				<td>Cody Drew</td>
+				<td>Patient is complaining of moderate shoulder pain.</td>
+			</tr>
+			<tr>
+				<td>3/11/22</td>
+				<td>10:30</td>
+				<td>Lacy Michaels</td>
+				<td>Patient has a skin rash.</td>
+			</tr>
+		</table>
+		<button>Delete</button>
+		<button>Edit</button>
+		<button>Create</button>
+	</div>
+</body>
+</html>
