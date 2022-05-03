@@ -5,5 +5,13 @@ System Implementation
 
 Git Repository: https://github.com/BlaineRudow/EMRS.git
 
+Website: https://cs.iupui.edu/~brudow/C451_Blaine_Rudow_EMRS/1_code/home.html
+
+Video Link: 
+https://iu.zoom.us/rec/share/mVFdf4--m5_21c4MLt6MX1jrJTpCv-VAs5bkF8tanznq3l6Qj9fQfY-S-ey3J4dt.hnxWadNq1CuEg4Nl
+
+
+DDMS: Youll need ORACLE 19C & SQL Developer to run the script
+
 The system is an Electronic medical records system that can aid a medical 
 providers office in daily operations. It can store, edit, and delete patients, providers, and appointments.
