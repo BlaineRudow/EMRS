@@ -1,0 +1,227 @@
+/* 
+TITLE: home.css
+AUTHOR: Blaine Rudow
+DATE: 2/19/22
+*/
+*{
+	margin:0 0 0px;
+}
+header{
+	text-align:left;
+	color:white;
+	background-color:#134;
+	padding:30px 150px;
+}
+body {
+	background-color: #800000;	
+}
+/* Top Nav Bar --------------------------------------------------*/
+#topNavBar{
+	width: 100%;
+	min-height: 50px;
+	padding-top: 10px; 
+	background-color: #909090;
+	text-align: center;	
+	position: absolute;
+	right: 0px;
+}
+#topNavBar a {
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	width: 100%;
+	font-size: 200%;
+	text-decoration: none;
+  
+}
+#topNavBar a:hover {
+  background-color: #555;
+  color: white;
+}
+#topNavBar a.active {
+  background-color: #134;
+  color: white;
+}
+/* Top Nav Bar End--------------------------------------------------*/
+
+/* Side Nav Bar--------------------------------------------------*/
+#sideNavBar {
+	padding-top: 0%;	
+}
+#sideNavBar ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 10%;
+	background-color: #909090;
+	height: 100%; /* Full height */
+	position: fixed; /* Make it stick, even on scroll */
+	overflow: auto;
+	padding-top: 10%;
+}
+li a {
+  display: block;
+  color: #000;
+  padding: 25px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+#sideNavBar a.active {
+  background-color: #134;
+  color: white;
+}
+/* Side Nav Bar End--------------------------------------------------*/
+
+
+/*----------------Home Page------------------------------------------*/
+#main{
+	padding-top: 4%;
+	padding-left: 12%;
+	text-align: center;
+	margin-right: 10px;	
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  margin: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background-color: #134;
+  padding: 5px;
+  color: white;
+  height: 240px;
+  min-width: 240px;
+  margin-bottom: 0;
+}
+#homeColumn1, #homeColumn2, #homeColumn3{
+	float: left; 
+	width: 33%;
+	min-width: 240px;
+	margin-top: 20px;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.homeContainer {
+  padding: 2px 16px;
+}
+.card a{
+	color: white;
+}
+.card img{
+	border-radius: 5px 5px 0 0;
+	margin-top: 10px;
+}
+/*----------------End Home Page------------------------------------------*/
+
+
+/* ----------------Patients CSS----------------------------------------- */
+table, th, td {
+	border: 1px solid;
+}
+input{
+	margin-bottom:10px;
+}
+button:hover{
+	background-color: blue;
+	color: white;
+}
+#patientMain{
+	margin-left: 15%;
+	margin-top: 100px;
+	margin-right: 10%;
+}
+body > table{
+	width: 80%;
+}
+table{
+	border-collapse: collapse;
+}
+table.list{
+	width: 100%;
+}
+td, th{
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+	font-weight: bold;
+}
+tr:nth-child(even),table.list thead>tr{
+	background-color: #A52A2A;
+}
+input[type=text], input[type=number], input[type=date] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+input[type=submit]{
+	width: 30%;
+	background-color: #ddd;
+	color: black;
+	padding:14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+input[type=submit]:hover {
+	background-color: blue;
+	color: white;
+}
+form div.form-action-buttons{
+	text-align: right;
+}
+#employeeList{
+	width: 100%;
+}
+#inputTD{
+	width: 400px;
+	min-width: 250px;
+}
+#outputTD{
+	width: 1000px;
+	min-width: 100%;
+}
+/*---------------------------------------- End Patients CSS-------------------------------- */
+
+
+/*------------------------------- Provider CSS ---------------------------------------------*/
+#providerMain{
+	margin-left: 15%;
+	margin-top: 100px;
+	margin-right: 10%;
+}
+/*------------------------------- End Provider CSS------------------------------------------- */
+
+/*------------------------------- Calendar CSS ---------------------------------------------*/
+.container{
+	margin-left: 15%;
+	margin-top: 100px;
+	margin-right: 10%;
+}
+.calendar h1{
+	text-align: center;	
+}
+.calendar td{
+	width: 1000px;
+	background-color: black;
+	color: white;
+}
+/*------------------------------- End Calendar CSS------------------------------------------- */
+
+/*------------------------------- Appointment CSS ---------------------------------------------*/
+#appointmentMain{
+	margin-left: 15%;
+	margin-top: 100px;
+	margin-right: 10%;
+}
+/*------------------------------- End Appointment CSS------------------------------------------- */

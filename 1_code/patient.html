@@ -1,0 +1,154 @@
+<!doctype html>
+<!--
+TITLE: patient.html
+AUTHOR: Blaine Rudow (BR)
+DATE: 2/19/22
+-->
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="CSS/EMR.css">  
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+<title>Patient Page</title>
+</head>
+
+<body>
+	<header>
+		<h1>EMRS Patient Page</h1>
+		<p>By Blaine Rudow</p>
+		<a href="index.html" id="logout">Logout</a>
+    </header>
+	<div id="topNavBar">
+		<a href="home.html">Home</a>
+		<a class="active" href="patient.html">Patients</a>
+		<a href="provider.html">Provider</a>
+		<a href="calendar.html">Calendar</a>
+		<a href="appointment.html">Appointments</a>
+	</div>
+	<div id="sideNavBar">
+		<ul>
+			<li><a  href="home.html">Home</a></li>
+			<li><a class="active" href="patient.html">Patients</a></li>
+			<li><a href="provider.html">Provider</a></li>
+			<li><a href="calendar.html">Calendar</a></li>
+			<li><a href="appointment.html">Appointments</a></li>
+		</ul>
+	</div>
+	<div id="patientMain">
+		<table id="patientTable">
+			<td id="inputTD">
+				<form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+					<div>
+						<label>Patient ID</label>
+						<input type="text" name="PatientID" id="patientID">
+					</div>
+					<div>
+						<label>First Name</label>
+						<input type="text" name="FirstName" id="firstName">
+					</div>
+					<div>
+						<label>Last Name</label>
+						<input type="text" name="lastName" id="lastName">
+					</div>
+					<div>
+						<label>Birth Date</label>
+						<input type="date" name="BirthDate" id="birthDate">
+					</div>
+					<div>
+						<label>Sex</label>
+						<input type="text" name="Sex" id="sex">
+					</div>
+					<div class="form-action-buttons">
+						<input type="submit" value="Submit">
+					</div>
+				</form>
+			</td>
+			<td id="outputTD">
+				<h1>Patient List</h1>
+				<table class="list" id="patientList">
+					<thead>
+						<tr>
+							<th>Patient ID</th>
+							<th>First Name</th>
+							<th>Last Name</th>
+							<th>Birth Date</th>
+							<th>Sex</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>4412655980</td>
+							<td>VALORIE</td>
+							<td>DOLCE</td>
+							<td>1977-12-02</td>
+							<td>F</td>
+							<td>
+								<button onclick="onEdit(this)">Edit</button> 
+								<button onclick="onDelete(this)">Delete</button>
+							</td>
+						</tr>
+						<tr>
+							<td>6481235548</td>
+							<td>GARRET</td>
+							<td>RUCKER</td>
+							<td>1995-01-22</td>
+							<td>M</td>
+							<td>
+								<button onclick="onEdit(this)">Edit</button> 
+								<button onclick="onDelete(this)">Delete</button>
+							</td>
+						</tr>
+						<tr>
+							<td>4477845612</td>
+							<td>BRIAN</td>
+							<td>MCGAVEN</td>
+							<td>1987-07-30</td>
+							<td>M</td>
+							<td>
+								<button onclick="onEdit(this)">Edit</button> 
+								<button onclick="onDelete(this)">Delete</button>
+							</td>
+						</tr>
+						<tr>
+							<td>9945100125</td>
+							<td>LUCIE</td>
+							<td>JONES</td>
+							<td>1979-08-11</td>
+							<td>F</td>
+							<td>
+								<button onclick="onEdit(this)">Edit</button> 
+								<button onclick="onDelete(this)">Delete</button>
+							</td>
+						</tr>
+						<tr>
+							<td>4041165789</td>
+							<td>HARRY</td>
+							<td>ELHART</td>
+							<td>1965-12-23</td>
+							<td>M</td>
+							<td>
+								<button onclick="onEdit(this)">Edit</button> 
+								<button onclick="onDelete(this)">Delete</button>
+							</td>
+						</tr>
+						<tr>
+							<td>4788904412</td>
+							<td>KATHY</td>
+							<td>KITCHENS</td>
+							<td>1981-02-20</td>
+							<td>F</td>
+							<td>
+								<button onclick="onEdit(this)">Edit</button> 
+								<button onclick="onDelete(this)">Delete</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</table>
+	</div>
+	<script src="Javascript/patient.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<!--
+TITLE: home.html
+AUTHOR: Blaine Rudow (BR)
+DATE: 2/19/22
+-->
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="CSS/EMR.css">  
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+<title>Home Page</title>
+</head>
+
+<body>
+	<header>
+		<h1>EMRS Home Page</h1>
+		<p>By Blaine Rudow</p>
+		<a href="index.html" id="logout">Logout</a>
+    </header>
+	<div id="topNavBar">
+		<a class="active" href="#home">Home</a>
+		<a href="patient.html">Patients</a>
+		<a href="provider.html">Provider</a>
+		<a href="calendar.html">Calendar</a>
+		<a href="appointment.html">Appointments</a>
+	</div>
+	<div id="sideNavBar">
+	 <ul>
+		<li><a class="active" href="#home">Home</a></li>
+		<li><a href="patient.html">Patients</a></li>
+		<li><a href="provider.html">Provider</a></li>
+		<li><a href="calendar.html">Calendar</a></li>
+		<li><a href="appointment.html">Appointments</a></li>
+	 </ul>
+	</div>
+	<div id="main">
+		<div id="homeRow1">
+			<div id="homeColumn1">
+				<div class="card">
+					<a href="home.html"><img src="Images/homeIcon.png" alt="Home" ></a>
+					<div class="homeContainer">
+						<a class="active" href="#home">Home</a>
+					</div>
+				</div>
+				
+				<div class="card">
+					<a href="patient.html"><img src="Images/patientsIcon.png" alt="Patients" ></a>
+					<div class="homeContainer">
+						<a href="patient.html">Patients</a>
+					</div>
+				</div>
+			</div>	
+			<div id="homeColumn2">
+				<div class="card">
+					<a href="provider.html"><img src="Images/providerIcon.png" alt="Provider" ></a>
+					<div class="homeContainer">
+						<a href="provider.html">Provider</a>
+					</div>
+				</div>
+				
+				<div class="card">
+					<a href="calendar.html"><img src="Images/calendarIcon.png" alt="Calendar" ></a>
+					<div class="homeContainer">
+						<a href="calendar.html">Calendar</a>
+					</div>
+				</div>
+			</div>
+			<div id="homeColumn3">
+				<div class="card">
+					<a href="appointment.html"><img src="Images/settingsIcon.png" alt="appointment"></a>
+					<div class="homeContainer">
+						<a href="appointment.html">Appointments</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
