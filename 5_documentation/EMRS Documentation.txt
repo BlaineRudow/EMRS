@@ -3,4 +3,7 @@ EMRS
 Blaine Rudow
 System Implementation
 
-Git Repository: 
+Git Repository: https://github.com/BlaineRudow/EMRS.git
+
+The system is an Electronic medical records system that can aid a medical 
+providers office in daily operations. It can store, edit, and delete patients, providers, and appointments.

@@ -2,7 +2,7 @@
 Blaine Rudow 
 Final Project: EMRS database
 System Implementation
-4/18/22
+4/08/22
 */
 /*
 DROP TABLE MEDICAL_HISTORY;
